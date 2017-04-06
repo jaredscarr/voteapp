@@ -1,0 +1,24 @@
+{
+  "presets": [
+    "react",
+    "es2015"
+  ],
+  "env": {
+    "test": {
+      "plugins": [
+        "istanbul",
+        "transform-regenerator"
+      ]
+    },
+    "production": {
+      "presets": [
+        [
+          "es2015",
+          {
+            "modules": false
+          }
+        ]
+      ]
+    }
+  }
+}
